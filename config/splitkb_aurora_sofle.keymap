@@ -32,7 +32,7 @@
         };
         mouse_scroll: mouse_scroll {
             compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <1>;
 
             bindings = <&msc SCRL_UP>,
                        <&msc SCRL_DOWN>;
@@ -67,7 +67,7 @@
 
             sensor-bindings = <
                 // Left Encoder: Mouse Scroll
-                &mouse_scroll
+                &mouse_scroll 0
 
                 // Right Encoder: Volume
                 &inc_dec_kp C_VOL_UP C_VOL_DN
@@ -102,7 +102,7 @@
 
             sensor-bindings = <
                 // Left Encoder: Mouse Scroll
-                &mouse_scroll
+                &mouse_scroll 0
 
                 // Right Encoder: Volume
                 &inc_dec_kp C_VOL_UP C_VOL_DN
@@ -137,7 +137,7 @@
 
             sensor-bindings = <
                 // Left Encoder: Mouse Scroll
-                &mouse_scroll
+                &mouse_scroll 0
 
                 // Right Encoder: Volume
                 &inc_dec_kp C_VOL_UP C_VOL_DN
