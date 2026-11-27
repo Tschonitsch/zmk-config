@@ -39,11 +39,11 @@
                 &kp TAB    &kp Q   &kp W   &kp E         &kp R                 &kp T                              &kp Y          &kp U   &kp I      &kp O       &kp P      &kp LBKT
                 &kp LSHFT  &kp A   &kp S   &kp D         &kp F                 &kp G                              &kp H          &kp J   &kp K      &kp L       &kp SEMI   &kp SQT
                 &kp LCTRL  &kp Z   &kp X   &kp C         &kp V                 &kp B     &trans       &trans      &kp N          &kp M   &kp COMMA  &kp PERIOD  &kp MINUS  &kp PLUS
-                                   &tog 1  &kp LEFT_ALT  &kp NON_US_BACKSLASH  &kp LWIN  &kp SPACE    &kp RETURN  &kp RIGHT_ALT  &tog 2  &trans     &kp HASH
+                                   &tog 1  &kp LEFT_ALT  &kp NON_US_BACKSLASH  &kp LWIN  &kp SPACE    &kp RETURN  &kp RIGHT_ALT  &tog 2  &trans     &kp NON_US_HASH
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>,
+                <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         // ---------- Base Layer ----------
