@@ -115,7 +115,7 @@
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6               &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
                 &kp TAB &kp Q &kp W &kp E &kp R &kp T                   &trans &trans &kp UP &trans &kp LPAR &kp RPAR
                 &kp LSHFT &kp A &kp S &kp D &kp F &kp G                 &kp HASH &kp LEFT &kp DOWN &kp RIGHT &kp LBRC &kp RBRC
-                &kp LCTRL &kp Y &kp X &kp C &kp V &kp B                 &trans &trans &trans &trans &kp COMMA &kp DOT &kp LBKT &kp RBKT
+                &kp LCTRL &kp Y &kp X &kp C &kp V &kp B                 &trans &trans &kp COMMA &kp DOT &kp LBKT &kp RBKT
                 &trans &kp LGUI &trans &kp LALT &mkp LCLK               &mkp RCLK &kp RALT &tog 2 &kp RGUI &kp RCTRL
             >;
 
