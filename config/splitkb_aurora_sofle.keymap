@@ -9,8 +9,8 @@
  * --------------------------------- */
 
 &led_strip {
-    // chain-length = <6>;
-    chain-length = <35>; // Both per-key and underglow LEDs
+    chain-length = <6>; // Only underglow LEDs
+    // chain-length = <35>; // Both per-key and underglow LEDs
     // chain-length = <29>; // Only per-key LEDs
 };
 
