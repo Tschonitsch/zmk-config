@@ -15,12 +15,11 @@
 
 // ---------- Led ----------
 &led_strip {
-    chain-length = <6>; // Only underglow LEDs
-    // chain-length = <35>; // Both per-key and underglow LEDs
+    // chain-length = <6>; // Only underglow LEDs
+    chain-length = <35>; // Both per-key and underglow LEDs
     // chain-length = <29>; // Only per-key LEDs
 };
 // ---------- Led ----------
-
 
 // ---------- Keymap ----------
 / {
@@ -114,7 +113,7 @@
                 &kp F1     &kp F2  &kp F3           &kp F4           &kp F5           &kp F6                                               &kp F7         &kp F8    &kp F9     &kp F10          &kp F11           &kp F12
                 &kp TAB    &kp Q   &kp W            &kp E            &kp R            &kp T                                                &trans         &trans    &kp UP     &trans           &kp LPAR          &kp RPAR
                 &kp LSHFT  &kp A   &kp S            &kp D            &kp F            &kp G                                                &trans         &kp LEFT  &kp DOWN   &kp RIGHT        &kp LBRC          &kp RBRC
-                &kp LCTRL  &kp Z   &kp X            &kp C            &kp V            &kp B            &rgb_ug RGB_HUD    &rgb_ug RGB_HUI  &trans         &trans    &kp COMMA  &kp PERIOD       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                &kp LCTRL  &kp Z   &kp X            &kp C            &kp BL_CYCLE     &kp BL_TOG       &rgb_ug RGB_HUD    &rgb_ug RGB_HUI  &trans         &trans    &kp COMMA  &kp PERIOD       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                    &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &mkp MB1           &mkp MB2         &kp RIGHT_ALT  &tog 2    &trans     &kp NON_US_HASH
             >;
 
