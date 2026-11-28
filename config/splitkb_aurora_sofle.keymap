@@ -67,8 +67,11 @@
             >;
 
             sensor-bindings = <
-                <&mouse_scroll>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                // Left Encoder: Mouse Scroll
+                &mouse_scroll
+
+                // Right Encoder: Volume
+                &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
         // ---------- Base Layer ----------
@@ -99,8 +102,11 @@
             >;
 
             sensor-bindings = <
-                <&mouse_scroll>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                // Left Encoder: Mouse Scroll
+                &mouse_scroll
+
+                // Right Encoder: Volume
+                &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
         // ---------- Game Layer ----------
@@ -131,8 +137,11 @@
             >;
 
             sensor-bindings = <
-                <&mouse_scroll>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                // Left Encoder: Mouse Scroll
+                &mouse_scroll
+
+                // Right Encoder: Volume
+                &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
         // ---------- Function Layer ----------
