@@ -7,6 +7,7 @@
 //                 __/ |               | |    
 //                |___/                |_|    
 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -34,7 +35,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-            tap-ms = <250>;
+            tap-ms = <30>;
         };
     };
     keymap {
