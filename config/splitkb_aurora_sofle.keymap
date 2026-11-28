@@ -31,9 +31,9 @@
             bindings = <&kp>;
         };
         msc_rotate: msc_rotate {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
     };
     keymap {
@@ -64,7 +64,7 @@
             >;
 
             sensor-bindings = <
-                &msc_rotate SCRL_UP SCRL_DOWN
+                &msc_rotate
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
@@ -96,7 +96,7 @@
             >;
 
             sensor-bindings = <
-                &msc_rotate SCRL_UP SCRL_DOWN
+                &msc_rotate
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
@@ -128,7 +128,7 @@
             >;
 
             sensor-bindings = <
-                &msc_rotate SCRL_UP SCRL_DOWN
+                &msc_rotate
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
