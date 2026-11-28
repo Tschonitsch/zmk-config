@@ -141,5 +141,5 @@
 // ---------- Keymap ----------
 
 &sensors {
-    triggers-per-rotation = <38>;
+    triggers-per-rotation = <34>;
 };
