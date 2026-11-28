@@ -31,11 +31,10 @@
             bindings = <&kp>;
         };
         mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
 
-            bindings = <&msc SCRL_UP>,
-                       <&msc SCRL_DOWN>;
+            bindings = <&msc>, <&msc>;
 
             tap-ms = <20>;
         };
@@ -68,7 +67,7 @@
             >;
 
             sensor-bindings = <
-                &mouse_scroll
+                &mouse_scroll SCRL_UP SCRL_DOWN
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
@@ -100,7 +99,7 @@
             >;
 
             sensor-bindings = <
-                &mouse_scroll
+                &mouse_scroll SCRL_UP SCRL_DOWN
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
@@ -132,7 +131,7 @@
             >;
 
             sensor-bindings = <
-                &mouse_scroll
+                &mouse_scroll SCRL_UP SCRL_DOWN
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
