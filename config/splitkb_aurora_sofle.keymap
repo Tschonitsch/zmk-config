@@ -36,6 +36,7 @@
 
             bindings = <&msc SCRL_UP>,
                        <&msc SCRL_DOWN>;
+            tap-ms = <20>;
         };
     };
     keymap {
@@ -66,11 +67,8 @@
             >;
 
             sensor-bindings = <
-                // Left Encoder: Mouse Scroll
-                &mouse_scroll 0
-
-                // Right Encoder: Volume
-                &inc_dec_kp C_VOL_UP C_VOL_DN
+                <&mouse_scroll>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             >;
         };
         // ---------- Base Layer ----------
@@ -101,11 +99,8 @@
             >;
 
             sensor-bindings = <
-                // Left Encoder: Mouse Scroll
-                &mouse_scroll 0
-
-                // Right Encoder: Volume
-                &inc_dec_kp C_VOL_UP C_VOL_DN
+                <&mouse_scroll>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             >;
         };
         // ---------- Game Layer ----------
@@ -136,11 +131,8 @@
             >;
 
             sensor-bindings = <
-                // Left Encoder: Mouse Scroll
-                &mouse_scroll 0
-
-                // Right Encoder: Volume
-                &inc_dec_kp C_VOL_UP C_VOL_DN
+                <&mouse_scroll>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             >;
         };
         // ---------- Function Layer ----------
