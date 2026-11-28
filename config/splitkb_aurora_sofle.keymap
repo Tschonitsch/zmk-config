@@ -138,3 +138,7 @@
     };
 };
 // ---------- Keymap ----------
+
+&sensors {
+    triggers-per-rotation = <12>;
+};
