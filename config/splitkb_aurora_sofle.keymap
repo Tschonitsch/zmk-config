@@ -70,11 +70,8 @@
             >;
 
             sensor-bindings = <
-                // Left Encoder: Mouse Scroll
                 &mouse_scroll
-
-                // Right Encoder: Volume
-                &inc_dec_kp C_VOL_UP C_VOL_DN
+                &inc_dec_kp C_VOL_UP C_VOL_DOWN
             >;
         };
         // ---------- Base Layer ----------
