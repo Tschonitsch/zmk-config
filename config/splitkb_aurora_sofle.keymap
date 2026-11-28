@@ -30,13 +30,16 @@
             #binding-cells = <1>;
             bindings = <&kp>;
         };
-        mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
+        behaviors {
+            mouse_scroll: behavior_sensor_rotate_mouse_wheel_up_down {
+                compatible = "zmk,behavior-sensor-rotate";
+                #sensor-binding-cells = <0>;
 
-            bindings = <&msc SCRL_UP>,
-                       <&msc SCRL_DOWN>;
-            tap-ms = <20>;
+                bindings = <&msc SCRL_UP>,
+                           <&msc SCRL_DOWN>;
+
+                tap-ms = <20>;
+            };
         };
     };
     keymap {
@@ -66,13 +69,10 @@
                                    &tog 1  &kp LEFT_ALT  &kp NON_US_BACKSLASH  &kp LWIN  &kp SPACE    &kp RETURN  &kp RIGHT_ALT  &tog 2  &none      &kp NON_US_HASH
             >;
 
-            sensor-bindings = <
-                // Left Encoder: Mouse Scroll
+            sensor-bindings =
                 &mouse_scroll
-
-                // Right Encoder: Volume
                 &inc_dec_kp C_VOL_UP C_VOL_DN
-            >;
+            ;
         };
         // ---------- Base Layer ----------
 
@@ -101,13 +101,10 @@
                                          &tog 1   &none     &kp LWIN  &kp LEFT_ALT  &kp SPACE    &kp RETURN  &kp RIGHT_ALT  &kp RCTRL  &kp RIGHT_WIN  &none
             >;
 
-            sensor-bindings = <
-                // Left Encoder: Mouse Scroll
+            sensor-bindings =
                 &mouse_scroll
-
-                // Right Encoder: Volume
                 &inc_dec_kp C_VOL_UP C_VOL_DN
-            >;
+            ;
         };
         // ---------- Game Layer ----------
 
@@ -136,13 +133,10 @@
                                    &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &mkp MB1           &mkp MB2         &kp RIGHT_ALT  &tog 2    &none      &kp NON_US_HASH
             >;
 
-            sensor-bindings = <
-                // Left Encoder: Mouse Scroll
+            sensor-bindings =
                 &mouse_scroll
-
-                // Right Encoder: Volume
                 &inc_dec_kp C_VOL_UP C_VOL_DN
-            >;
+            ;
         };
         // ---------- Function Layer ----------
     };
