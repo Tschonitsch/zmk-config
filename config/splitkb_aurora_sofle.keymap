@@ -65,8 +65,8 @@
             >;
 
             sensor-bindings = <
-                &msc_rotate
                 &inc_dec_kp C_VOL_UP C_VOL_DN
+                &msc_rotate
             >;
         };
         // ---------- Base Layer ----------
