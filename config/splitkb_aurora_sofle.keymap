@@ -65,7 +65,7 @@
 
             sensor-bindings = <
                 &msc_rotate
-                &inc_dec_kp C_VOL_UP C_VOL_DN
+                &inc_dec_kp C_VOL_DN C_VOL_UP
             >;
         };
         // ---------- Base Layer ----------
@@ -97,7 +97,7 @@
 
             sensor-bindings = <
                 &msc_rotate
-                &inc_dec_kp C_VOL_UP C_VOL_DN
+                &inc_dec_kp C_VOL_DN C_VOL_UP
             >;
         };
         // ---------- Game Layer ----------
@@ -129,7 +129,7 @@
 
             sensor-bindings = <
                 &msc_rotate
-                &inc_dec_kp C_VOL_UP C_VOL_DN
+                &inc_dec_kp C_VOL_DN C_VOL_UP
             >;
         };
         // ---------- Function Layer ----------
