@@ -59,7 +59,7 @@
             >;
 
             sensor-bindings = <
-                &msc SCRL_UP &msc SCRL_DOWN
+                &msc SCRL_UP SCRL_DOWN
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
@@ -91,7 +91,7 @@
             >;
 
             sensor-bindings = <
-                &msc SCRL_UP &msc SCRL_DOWN
+                &msc SCRL_UP SCRL_DOWN
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
@@ -123,7 +123,7 @@
             >;
 
             sensor-bindings = <
-                &msc SCRL_UP &msc SCRL_DOWN
+                &msc SCRL_UP SCRL_DOWN
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
